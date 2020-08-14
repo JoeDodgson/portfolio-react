@@ -1,0 +1,452 @@
+/* HTML elements */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'DM Mono', monospace;
+    padding-top: 30px;
+}
+
+main {
+    margin: 30px;
+}
+
+section {
+    margin: 90px 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'DM Mono', monospace;
+}
+
+h1, h2, h3 {
+    color: #39ff14;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin: 0 0 50px 0;
+}
+
+h3 {
+    font-size: 1.15em;
+    margin: 10px;
+}
+
+h4 {
+    font-size: 1.15em;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+p, li {
+    font-size: 0.8em;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+ul {
+    padding: 10px 10px 10px 30px;
+    margin: 0;
+}
+
+li {
+    margin:  0 0 10px 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: unset;
+    border: unset;
+}
+
+
+/* Header */
+#header-icons-container a {
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+.header-title, .header-subtitle, h2, .project h3 {
+    text-align: center;
+}
+
+.header-title {
+    height: 100px;
+}
+
+.header-subtitle {
+    height: 80px;
+}
+
+#header-icons-container {
+    text-align: center;
+    height: 75px;
+}
+
+
+/* Navbar */
+#navbar {
+    width: 100%;
+}
+
+.nav-link {
+    width: 27.5%;
+    float: left;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-current {
+    border: 1px solid #39ff14;
+    border-bottom: 1px solid #000000;
+}
+
+.nav-not-current {
+    border-bottom: 1px solid #39ff14;
+}
+
+#nav-link-container {
+    background: #000000;
+    box-shadow: 0px 20px 30px 0px #000000;
+;
+}
+
+
+#nav-spacing {
+    width: 30px;
+    float: left;
+    color: #000000;
+    border-bottom: 1px solid #39ff14;
+}
+
+#nav-fill {
+    display: flex;
+    color: #000000;
+    border-bottom: 1px solid #39ff14;
+}
+
+/* Height to match #navbar for when the sticky class is removed */
+#navbar-spacing {
+    height: 48px;
+}
+
+
+/* About section */
+#intro-image {
+    width: 40%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#intro-image, #university-image {
+    float: right;
+}
+
+#arup-image, #experience-image {
+    float: left;
+    margin-right: 25px;
+}
+
+.about-article, .project {
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#download-cv, .site-link, .repo-link {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 12px;
+    background-color: grey;
+}
+
+#download-cv {
+    margin-top: 20px;
+}
+
+.site-link, .repo-link {
+    margin: 0 10px;
+}
+
+.fa-download {
+    color: #000000;
+}
+
+#download-cv:hover, .site-link:hover, .repo-link:hover {
+    color: #ffffff;
+    background-color: #39ff14;
+    text-decoration: none;
+}
+
+.fa-download:hover {
+    color: #000000;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+
+/* Portfolio section */
+.project-image {
+    width: 100%;
+}
+
+
+/* Contact section */
+#contact-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#email-contact {
+    width: 60%;
+}
+
+#socials-contact {
+    width: 40%;
+}
+
+#email-contact a {
+    font-size: 0.75em;
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+}
+
+#email-contact a:hover {
+    text-decoration: underline;
+    color: #39ff14;
+}
+
+#contact-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-icons-container a {
+    color: #ffffff;
+    margin: 0 5px;
+}
+
+#header-icons-container a:hover, #contact-icons-container a:hover {
+    color:  #39ff14;
+    text-decoration: none;
+}
+
+
+/* Footer */
+footer p {
+    font-size: 0.9em;
+    text-align: center;
+    color:  #39ff14;
+}
+
+
+/* Styling classes applied throughout page */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* .vis-hidden {
+    opacity: 0;
+} */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+
+/* Transitions */
+main, footer, #header-icons-container, #header-title-text, #header-subtitle-text, #navbar {
+    transition: opacity 2500ms;
+}
+
+
+/* Responsiveness */
+@media (min-width: 376px) {
+    img {
+        width: 40%;
+    }
+
+    #email-contact, #socials-contact {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 376px) and (max-width: 575px) {
+
+    h1 {
+        font-size: 2.25em;
+    }
+
+    h2 {
+        font-size: 1.95em;
+    }
+
+    h3, h4 {
+        font-size: 1.3em;
+    }
+
+    a {
+        font-size: 1.25em;
+    }
+
+    footer p {
+        font-size: 1.0em;
+    }
+
+    p, li, #download-cv, .site-link, .repo-link {
+        font-size: 0.9em;
+    }
+
+    #header-icons-container a {
+        font-size: 1.45em;
+    }
+
+    #email-contact a {
+        font-size: 0.85em;
+    }
+
+    .nav-link {
+        width: 25%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3, h4 {
+        font-size: 1.45em;
+    }
+
+    a {
+        font-size: 1.35em;
+    }
+
+    footer p {
+        font-size: 1.1em;
+    }
+
+    p, li, #download-cv, .site-link, .repo-link {
+        font-size: 1.0em;
+    }
+
+    #header-icons-container a {
+        font-size: 1.65em;
+    }
+
+    #email-contact a {
+        font-size: 0.95em;
+    }
+
+    .nav-link {
+        width: 22.5%;
+    }
+}
+
+@media (min-width: 768px) {
+    .project {
+        width: 50%;
+        float: left;
+        min-height: 775px;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+    }
+
+    .project-description {
+        height: 176px;
+    }
+
+    .technologies-list {
+        height: 154px;
+    }
+
+    h1 {
+        font-size: 2.75em;
+    }
+    
+    h2 {
+        font-size: 2.4em;
+    }
+    
+    h3, h4 {
+        font-size: 1.6em;
+    }
+    
+    a {
+        font-size: 1.5em;
+    }
+    
+    footer p {
+        font-size: 1.25em;
+    }
+    
+    p, li, #download-cv, .site-link, .repo-link {
+        font-size: 1.1em;
+    }
+    
+    #email-contact a {
+        font-size: 1.05em;
+    }
+
+    #header-icons-container a {
+        font-size: 1.8em;
+    }
+
+    .nav-link {
+        width: 20%;
+    }
+}
+
+@media (min-width: 867px) {
+    .project-image {
+        height: 275px;
+        width: auto;
+        margin: auto;
+        display: flex;
+    }
+
+    #nav-spacing {
+        width: calc((100vw - 807px) / 2);
+    }
+    
+    main {
+        margin: 30px auto;
+        max-width: 807px;
+    }
+}
