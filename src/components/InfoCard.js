@@ -59,26 +59,31 @@ export const InfoCard = () => {
     ]
 
     return (
-      <div className={classes.root}>
-      {cardsContent.map(card => (
-        <Accordion key={card.id}>
-          <AccordionSummary  
-            className={classes.accordion}
-            expandIcon={<ExpandMoreIcon className={classes.accordion}/>}
-            aria-controls="panel1a-content"
-          >
-            <h1 className={classes.heading}>{card.title}</h1>
-          </AccordionSummary>
-          <AccordionDetails className={classes.accordion}>
-            <div className="clearfix">
-                <img id={card.imageId} src={card.imagePath} alt={card.imageAlt}></img>
-                {card.textItems.map(textItem => (
-                    <p>{textItem}</p>
-                ))}
-            </div>
-          </AccordionDetails>
-        </Accordion>
-      ))}
-      </div>
+      <section class="clearfix" id="about">
+        <div>
+          <h2>Hi and welcome to my portfolio</h2>
+        </div>
+        <div className={classes.root}>
+          {cardsContent.map(card => (
+            <Accordion key={card.id}>
+              <AccordionSummary  
+                className={classes.accordion}
+                expandIcon={<ExpandMoreIcon className={classes.accordion}/>}
+                aria-controls="panel1a-content"
+              >
+                <h1 className={classes.heading}>{card.title}</h1>
+              </AccordionSummary>
+              <AccordionDetails className={classes.accordion}>
+                <div className="clearfix">
+                    <img id={card.imageId} src={card.imagePath} alt={card.imageAlt}></img>
+                    {card.textItems.map(textItem => (
+                        <p>{textItem}</p>
+                    ))}
+                </div>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
+      </section>
     );
 }
