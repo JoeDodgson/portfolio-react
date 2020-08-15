@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Footer = () => {
     return (
-        <div>
-            
-        </div>
+        <footer>
+            <p>© Joe Dodgson {new Date().getFullYear()}</p>
+        </footer>
     )
 }
