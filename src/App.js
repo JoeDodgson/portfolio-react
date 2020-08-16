@@ -1,25 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import NavBar from './components/NavBar';
-import { Header } from './components/Header';
-import { InfoCard } from './components/InfoCard';
-import { Portfolio } from './components/Portfolio';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+import Portfolio from './components/pages/Portfolio';
+import PrivacyPolicy from './components/pages/PrivacyPolicy';
 
 function App() {
   return (
-    <>
-      <NavBar/>
-      <Header>
-      </Header>
-      <main>
-        <InfoCard/>
-        <Portfolio/>
-        <Contact/>
-      </main>
-      <Footer/>
-    </>
+    <Router>
+      <Route path="/portfolio" component={Portfolio}/>
+      <Route exact path="/privacy" component={PrivacyPolicy}/>
+    </Router>
   );
 }
 

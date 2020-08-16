@@ -15,6 +15,10 @@ export const Header = props => {
                 <a href="https://www.linkedin.com/in/joe-dodgson/" target="_blank" className="fab fa-linkedin"></a>
                 <a href="https://github.com/JoeDodgson/" target="_blank" className="fab fa-github-square"></a>
             </div>
+
+            <div class="button-container">
+                <button><a href={props.linkPath} target="_blank" className="site-link">{props.link}</a></button>
+            </div>
         </header>
     )
 }

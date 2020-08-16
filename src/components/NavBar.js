@@ -15,8 +15,8 @@ class NavBar extends React.Component {
                         <div id="nav-about" className="nav-link nav-not-current">
                             <a href="#about">About</a>
                         </div>
-                        <div id="nav-portfolio" className="nav-link nav-not-current">
-                            <a href="#portfolio">Portfolio</a>
+                        <div id="nav-projects" className="nav-link nav-not-current">
+                            <a href="#projects">Projects</a>
                         </div>
                         <div id="nav-contact" className="nav-link nav-not-current">
                             <a href="#contact">Contact</a>
