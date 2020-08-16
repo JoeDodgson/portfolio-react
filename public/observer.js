@@ -2,7 +2,7 @@ $(document).ready(function () {
     const about = document.querySelector("#about");
     const contact = document.querySelector("#contact");
     const navAbout = document.querySelector("#nav-about");
-    const navPortfolio = document.querySelector("#nav-portfolio");
+    const navProjects = document.querySelector("#nav-projects");
     const navContact = document.querySelector("#nav-contact");
 
     const aboutOptions = {
@@ -19,14 +19,14 @@ $(document).ready(function () {
                     navAbout.classList.add("nav-not-current");
                     navAbout.classList.remove("nav-current");
                     if (navContact.classList.contains("nav-not-current")) {
-                        navPortfolio.classList.add("nav-current");
-                        navPortfolio.classList.remove("nav-not-current");
+                        navProjects.classList.add("nav-current");
+                        navProjects.classList.remove("nav-not-current");
                     }
                 } else {
                     navAbout.classList.add("nav-current");
                     navAbout.classList.remove("nav-not-current");
-                    navPortfolio.classList.add("nav-not-current");
-                    navPortfolio.classList.remove("nav-current");
+                    navProjects.classList.add("nav-not-current");
+                    navProjects.classList.remove("nav-current");
                 }
             })
         }, aboutOptions);
@@ -44,14 +44,14 @@ $(document).ready(function () {
                     navContact.classList.add("nav-not-current");
                     navContact.classList.remove("nav-current");
                     if (navAbout.classList.contains("nav-not-current")) {
-                        navPortfolio.classList.add("nav-current");
-                        navPortfolio.classList.remove("nav-not-current");
+                        navProjects.classList.add("nav-current");
+                        navProjects.classList.remove("nav-not-current");
                     }
                 } else {
                     navContact.classList.add("nav-current");
                     navContact.classList.remove("nav-not-current");
-                    navPortfolio.classList.add("nav-not-current");
-                    navPortfolio.classList.remove("nav-current");
+                    navProjects.classList.add("nav-not-current");
+                    navProjects.classList.remove("nav-current");
                 }
             })
         }, contactOptions);

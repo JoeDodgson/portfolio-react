@@ -1,7 +1,7 @@
 import React from 'react'
 import { Project } from './Project'
   
-export const Portfolio = () => {
+export const ProjectContainer = () => {
     const projects = [{
         id: "1",
         title: "Fitness buddy",
@@ -64,9 +64,9 @@ export const Portfolio = () => {
     },
     ]
     return (
-        <section className="clearfix" id="portfolio">
+        <section className="clearfix" id="projects">
             <div>
-                <h2>My portfolio</h2>
+                <h2>My projects</h2>
             </div>
             {projects.map(project => (
                 <Project project={project}/>
