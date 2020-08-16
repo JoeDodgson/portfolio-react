@@ -67,7 +67,7 @@ export const InfoCard = () => {
     ]
 
     return (
-      <section className="clearfix">
+      <section id="info" className="clearfix">
         <div className={classes.root}>
           {cardsContent.map(card => (
             <Accordion key={card.id}>

@@ -11,6 +11,7 @@ html {
 
 main {
     margin: 30px;
+    margin-top: 0;
 }
 
 section {
@@ -83,6 +84,12 @@ button {
     font-size: 1.3em;
 }
 
+#header-privacy-link a {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+
 .header-title, .header-subtitle, h2, .project h3 {
     text-align: center;
 }
@@ -95,7 +102,7 @@ button {
     height: 80px;
 }
 
-#header-icons-container {
+#header-icons-container,  #header-privacy-link {
     text-align: center;
     height: 75px;
 }
@@ -151,6 +158,10 @@ button {
 }
 
 /* About section */
+#info {
+    padding: 0;
+}
+
 #intro-image {
     width: 40%;
     border-radius: 50%;
@@ -252,7 +263,7 @@ button {
     justify-content: center;
 }
 
-#contact-icons-container a {
+#contact-icons-container a, #header-icons-container a {
     color: #ffffff;
     margin: 0 5px;
 }
@@ -260,6 +271,11 @@ button {
 #header-icons-container a:hover, #contact-icons-container a:hover {
     color:  #39ff14;
     text-decoration: none;
+}
+
+#header-privacy-link a:hover {
+    color:  #39ff14;
+    text-decoration: underline;
 }
 
 
@@ -341,7 +357,7 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
         font-size: 1.0em;
     }
 
-    p, li, #download-cv, .site-link, .repo-link {
+    p, li, #download-cv, .site-link, .repo-link, #header-privacy-link a {
         font-size: 0.9em;
     }
 
@@ -379,7 +395,7 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
         font-size: 1.1em;
     }
 
-    p, li, #download-cv, .site-link, .repo-link {
+    p, li, #download-cv, .site-link, .repo-link,  #header-privacy-link a {
         font-size: 1.0em;
     }
 
@@ -436,7 +452,7 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
         font-size: 1.1em;
     }
     
-    #email-contact a {
+    #email-contact a,  #header-privacy-link a {
         font-size: 1.05em;
     }
 
@@ -462,7 +478,7 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
     }
     
     main {
-        margin: 30px auto;
+        margin: 0 auto 30px auto;
         max-width: 807px;
     }
 }
