@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
@@ -59,10 +58,7 @@ export const InfoCard = () => {
     ]
 
     return (
-      <section class="clearfix" id="about">
-        <div>
-          <h2>Hi and welcome to my portfolio</h2>
-        </div>
+      <section className="clearfix">
         <div className={classes.root}>
           {cardsContent.map(card => (
             <Accordion key={card.id}>
