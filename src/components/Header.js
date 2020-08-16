@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Header = props => {
     return (
-        <header>
+        <header id="about" style={{width: "100%", paddingTop: "100px"}}>
             <div className="header-title">
                 <h1 id="header-title-text" className="vis-hidden">Joe Dodgson</h1>
             </div>
@@ -15,7 +15,6 @@ export const Header = props => {
                 <a href="https://www.linkedin.com/in/joe-dodgson/" target="_blank" className="fab fa-linkedin"></a>
                 <a href="https://github.com/JoeDodgson/" target="_blank" className="fab fa-github-square"></a>
             </div>
-            {props.children}
         </header>
     )
 }
