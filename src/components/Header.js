@@ -17,7 +17,7 @@ export const Header = props => {
             </div>
 
             <div class="button-container">
-                <button><a href={props.linkPath} target="_blank" className="site-link">{props.link}</a></button>
+                <button><a href={props.linkPath} target="_self" className="site-link">{props.link}</a></button>
             </div>
         </header>
     )
